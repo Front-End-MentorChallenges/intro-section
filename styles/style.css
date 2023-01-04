@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.main-container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container nav .logo {
+  margin: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+.main-container nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px;
+  font-family: sans-serif;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-container nav .nav-list a {
+  color: dimgray;
+  margin: 10px;
+}
+
+.main-container nav .nav-list a:hover {
+  color: #141414;
+}
+
+.main-container nav .options button {
+  margin: 20px;
+  background: none;
+  outline: none;
+  border: none;
+  list-style: none;
+  cursor: pointer;
+  color: dimgray;
+}
+
+.main-container nav .options button:hover {
+  color: #141414;
+}
+
+.main-container nav .options .signup {
+  border: 1px solid dimgray;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.main-container .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container .hero .about-info h1 {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 50px;
+  font-family: "Epilogue", sans-serif;
+}
+
+.main-container .hero .about-info p {
+  font-family: sans-serif;
+  color: dimgray;
+}
+
+.main-container .side-image img {
+  width: 500px;
+}
+/*# sourceMappingURL=style.css.map */

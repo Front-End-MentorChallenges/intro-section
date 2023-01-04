@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@900&display=swap");
+@import "./_variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: $fontSize;
+}
+
+.main-container {
+  nav {
+    .logo {
+      margin: 20px;
+      font-weight: bold;
+      font-family: sans-serif;
+      font-size: 40px;
+    }
+    display: flex;
+    .nav-list {
+      display: flex;
+      margin: 40px;
+      font-family: sans-serif;
+      justify-content: space-between;
+      & a {
+        color: $lightGray;
+        margin: 10px;
+        &:hover {
+          color: $black;
+        }
+      }
+    }
+    .options {
+      button {
+        margin: 20px;
+        background: none;
+        outline: none;
+        border: none;
+        list-style: none;
+        cursor: pointer;
+        color: $lightGray;
+
+        &:hover {
+          color: $black;
+        }
+      }
+      .login {
+      }
+      .signup {
+        border: 1px solid $lightGray;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    }
+  }
+  .hero {
+    display: flex;
+    .about-info {
+      & h1 {
+        font-weight: bold;
+        font-style: normal;
+        font-size: 50px;
+        font-family: $fontFamily;
+      }
+      & p {
+        font-family: sans-serif;
+        color: $lightGray;
+      }
+      .images {
+      }
+    }
+  }
+  .side-image {
+    & img {
+      width: 500px;
+    }
+  }
+}
