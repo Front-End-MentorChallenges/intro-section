@@ -7,6 +7,16 @@
   font-size: 18px;
 }
 
+@media screen and (max-width: 768px) {
+  .main-container {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+}
+
 .main-container nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,9 +45,16 @@
           justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .main-container nav .nav-list {
+    display: none;
+  }
+}
+
 .main-container nav .nav-list a {
   color: dimgray;
   margin: 10px;
+  margin-right: 30px;
 }
 
 .main-container nav .nav-list a:hover {
@@ -46,6 +63,12 @@
 
 .main-container nav .options {
   margin-left: 30rem;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container nav .options {
+    display: none;
+  }
 }
 
 .main-container nav .options button {
@@ -68,6 +91,27 @@
   border-radius: 5px;
 }
 
+.main-container nav .menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container nav .menu-icon {
+    display: block;
+    float: right;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 290px;
+    font-size: 50px;
+    cursor: pointer;
+  }
+}
+
+.main-container nav #menu-toggle {
+  display: none;
+}
+
 .main-container .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,11 +120,30 @@
   margin: 80px;
 }
 
+@media screen and (max-width: 768px) {
+  .main-container .hero {
+    margin: 0;
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-container .hero .about-info {
+    margin-top: 500px;
+  }
+}
+
 .main-container .hero .about-info h1 {
   font-weight: bold;
   font-style: normal;
   font-size: 90px;
   font-family: "Epilogue", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container .hero .about-info h1 {
+    font-size: 50px;
+  }
 }
 
 .main-container .hero .about-info p {
@@ -115,6 +178,12 @@
   position: fixed;
 }
 
+@media screen and (max-width: 768px) {
+  .main-container .side-image {
+    position: absolute;
+  }
+}
+
 .main-container .side-image img {
   width: 500px;
   display: -webkit-box;
@@ -122,5 +191,12 @@
   display: flex;
   margin-top: -100px;
   margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container .side-image img {
+    content: url("../images/image-hero-mobile.png");
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
