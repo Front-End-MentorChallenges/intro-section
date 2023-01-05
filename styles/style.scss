@@ -16,6 +16,7 @@
       font-weight: bold;
       font-family: sans-serif;
       font-size: 40px;
+      user-select: none;
     }
     display: flex;
     .nav-list {
@@ -56,24 +57,50 @@
   }
   .hero {
     display: flex;
+    width: 70rem;
+    margin: 80px;
     .about-info {
       & h1 {
         font-weight: bold;
         font-style: normal;
-        font-size: 50px;
+        font-size: 90px;
         font-family: $fontFamily;
       }
       & p {
         font-family: sans-serif;
         color: $lightGray;
+        line-height: 25px;
+        letter-spacing: 1px;
+        width: 460px;
+      }
+      & .learn-more {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        padding: 15px;
+        border-radius: 20px;
+        background: $black;
+        color: white;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        &:hover {
+          background: transparent;
+          color: black;
+          font-weight: bold;
+          border: 1px solid black;
+        }
       }
       .images {
+        margin-top: 50px;
       }
     }
   }
   .side-image {
     & img {
       width: 500px;
+      display: flex;
+      margin-top: -100px;
+      margin-left: 100px;
     }
   }
 }
