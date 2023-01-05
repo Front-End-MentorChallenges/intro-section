@@ -33,8 +33,9 @@
       }
     }
     .options {
+      margin-left: 30rem;
       button {
-        margin: 20px;
+        margin: 25px;
         background: none;
         outline: none;
         border: none;
@@ -92,6 +93,7 @@
       }
       .images {
         margin-top: 50px;
+        position: fixed;
       }
     }
   }
